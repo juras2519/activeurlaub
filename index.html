@@ -9,25 +9,6 @@
 :root{--green:#173f32;--green2:#285a46;--cream:#f5f2e9;--ink:#202923;--muted:#69736c;--gold:#c6a66a}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6}a{color:inherit}header{position:sticky;top:0;z-index:5;background:#fffF;border-bottom:1px solid #e8e8e2;backdrop-filter:blur(12px)}.nav{max-width:1160px;margin:auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-family:Georgia,serif;font-size:21px;color:var(--green);font-weight:bold;text-decoration:none;line-height:1.1}.brand small{display:block;font:10px Arial;letter-spacing:3px;margin-bottom:5px}.navlinks{display:flex;gap:22px;align-items:center}.navlinks a{text-decoration:none;font-size:13px;font-weight:bold}.btn{display:inline-block;background:var(--green);color:white;text-decoration:none;padding:12px 19px;border-radius:3px;font-weight:bold;border:0;cursor:pointer}.btn:hover{background:var(--green2)}.hero{min-height:610px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(13,34,27,.76),rgba(13,34,27,.18)),url('images/panorama-mit-nebel.png') center/cover no-repeat;color:white}.hero-inner{max-width:1160px;width:100%;margin:auto;padding:90px 24px}.eyebrow{text-transform:uppercase;letter-spacing:3px;font-size:11px;font-weight:bold;color:#e5d3ae}.hero h1{font:clamp(46px,7vw,82px)/.98 Georgia,serif;margin:15px 0 20px;max-width:750px}.hero p{font-size:18px;max-width:570px}.hero .btn{background:#fff;color:var(--green);margin-top:18px}.wrap{max-width:1160px;margin:auto;padding:78px 24px}.section-tag{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--green2);font-weight:bold}.heading{font:clamp(30px,4vw,46px)/1.12 Georgia,serif;color:var(--green);margin:8px 0 18px}.intro{max-width:740px;color:var(--muted)}.features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px}.feature{background:var(--cream);padding:22px;border-radius:4px}.feature b{display:block;color:var(--green);font-size:14px;margin:8px 0}.feature span{font-size:12px;color:var(--muted)}.icon{font-size:23px;color:var(--green2)}.gallery{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:220px 220px;gap:12px;margin-top:30px}.gallery img{width:100%;height:100%;object-fit:cover;border-radius:4px}.gallery img:first-child{grid-row:span 2}.split{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}.soft{background:var(--cream)}.booking{background:var(--green);color:#fff}.booking .heading{color:#fff}.booking p{color:#e0e8e2}.bookingbox{background:#fff;color:var(--ink);padding:25px;border-radius:4px;margin-top:25px}.bookingbox input,.bookingbox select,.bookingbox textarea{width:100%;padding:12px;border:1px solid #d8ddd8;border-radius:3px;font:inherit;margin:5px 0 13px}.bookingbox label{font-size:12px;font-weight:bold}.bookingbox .btn{width:100%;font-size:14px}.calendar-note{font-size:12px;color:var(--muted);margin-top:12px}.trails{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:30px}.trail{border:1px solid #e2e5df;padding:22px;border-radius:4px}.trail h3{font:22px Georgia,serif;color:var(--green);margin:5px 0}.trail small{color:var(--green2);font-weight:bold}.trail p{font-size:13px;color:var(--muted)}.map{width:100%;height:350px;border:0;border-radius:4px}.contact{background:#142f26;color:#fff}.contact .heading{color:#fff}.contact a{color:#fff}.contactgrid{display:grid;grid-template-columns:1fr 1fr;gap:35px}.foot{background:#10251e;color:#cbd5cf;padding:20px 24px;text-align:center;font-size:11px}
 @media(max-width:760px){.navlinks a:not(.btn){display:none}.hero{min-height:540px}.hero-inner{padding:70px 24px}.features{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:180px 180px 180px}.gallery img:first-child{grid-row:auto;grid-column:span 2}.split,.contactgrid{grid-template-columns:1fr}.trails{grid-template-columns:1fr}.wrap{padding:56px 22px}}
-
-.availability{background:var(--cream)}
-.calendar-shell{background:#fff;border:1px solid #e5e1d6;border-radius:10px;padding:24px;box-shadow:0 8px 28px #173f3210}
-.calendar-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
-.calendar-head button{border:1px solid #d8d8cf;background:white;border-radius:5px;padding:8px 13px;cursor:pointer;color:var(--green);font-weight:bold}
-.months{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-.month{border:1px solid #e8e8e2;border-radius:8px;padding:12px}
-.month h3{text-align:center;font: bold 16px Georgia,serif;color:var(--green);margin:2px 0 10px}
-.days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px;text-align:center}
-.days span{font-size:12px;padding:7px 0;border-radius:4px}
-.days .weekday{font-weight:bold;color:var(--muted);padding:4px 0}
-.days .free{background:#e7f3e9;color:#245b35}
-.days .busy{background:#f7d9d5;color:#8b2e25;text-decoration:line-through}
-.days .past{color:#b7b7b0}
-.calendar-legend{display:flex;gap:18px;flex-wrap:wrap;margin:18px 0 8px;font-size:13px}
-.legend-dot{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:-1px}
-.calendar-status{font-size:13px;color:var(--muted);margin-top:12px}
-@media(max-width:800px){.months{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:520px){.months{grid-template-columns:1fr}.calendar-shell{padding:14px}}
 </style>
 </head>
 <body>
@@ -41,83 +22,6 @@
 <section id="anfrage" class="booking"><div class="wrap split"><div><div class="section-tag" style="color:#d7c49d">Buchung & Kontakt</div><h2 class="heading">Verfügbarkeit anfragen</h2><p>Schicken Sie uns Ihre Wunschdaten. Wir prüfen die Verfügbarkeit und melden uns persönlich bei Ihnen.</p><p><b>Telefon / WhatsApp:</b><br><a href="tel:+4915901624869">+49 159 01624869</a></p><p><b>E-Mail:</b><br><a href="mailto:activeurlaub@gmail.com">activeurlaub@gmail.com</a></p><p><b>Adresse:</b><br>Rammenfeld 8A, 54614 Schönecken, Deutschland</p></div><div class="bookingbox">
 <!-- Optional: Booking.com iCal ist kein allgemein einbettbarer Live-Kalender. Für echte Synchronisierung wird ein freigegebener Kalender-/Channel-Manager-Link benötigt. -->
 <form action="https://formsubmit.co/activeurlaub@gmail.com" method="POST"><input type="hidden" name="_subject" value="Neue Buchungsanfrage – Weitblick am Rammenfeld"><input type="hidden" name="_captcha" value="true"><label for="name">Name</label><input id="name" name="Name" required placeholder="Vor- und Nachname"><label for="email">E-Mail</label><input id="email" type="email" name="E-Mail" required placeholder="name@beispiel.de"><label for="arrival">Anreise</label><input id="arrival" type="date" name="Anreise" required><label for="departure">Abreise</label><input id="departure" type="date" name="Abreise" required><label for="guests">Anzahl der Gäste</label><select id="guests" name="Gäste"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select><label for="message">Nachricht</label><textarea id="message" name="Nachricht" rows="3" placeholder="Ihre Fragen oder Wünsche"></textarea><button class="btn" type="submit">Unverbindliche Anfrage senden</button><p class="calendar-note">Mit dem Absenden wird eine unverbindliche Anfrage per E-Mail übermittelt. Die Buchung ist erst nach Bestätigung verbindlich.</p></form></div></div></section>
-
-<section class="availability" id="kalender">
- <div class="wrap">
-  <div class="section-tag">Buchungskalender</div>
-  <h2 class="heading">Freie und belegte Termine</h2>
-  <p class="intro">Der Kalender zeigt die aus Booking.com importierten Belegungen. Bitte beachten Sie, dass die Synchronisierung zeitverzögert sein kann. Eine Anfrage ist erst nach unserer Bestätigung verbindlich.</p>
-  <div class="calendar-shell">
-   <div class="calendar-head"><button type="button" id="cal-prev" aria-label="Vorherige Monate">← Zurück</button><strong id="cal-range">Verfügbarkeit</strong><button type="button" id="cal-next" aria-label="Nächste Monate">Weiter →</button></div>
-   <div class="months" id="calendar-months"><p>Kalender wird geladen …</p></div>
-   <div class="calendar-legend"><span><i class="legend-dot" style="background:#e7f3e9"></i>Voraussichtlich frei</span><span><i class="legend-dot" style="background:#f7d9d5"></i>Belegt</span></div>
-   <p class="calendar-status" id="calendar-status" role="status">Daten werden von Booking.com geladen.</p>
-  </div>
- </div>
-</section>
 </main><footer class="foot">© <span id="year"></span> Weitblick am Rammenfeld · <a href="mailto:activeurlaub@gmail.com">Kontakt</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></footer>
-
-<script>
-document.getElementById('year').textContent=new Date().getFullYear();
-const a=document.getElementById('arrival'),d=document.getElementById('departure');
-a.addEventListener('change',()=>{d.min=a.value;if(d.value&&d.value<=a.value)d.value='';});
-
-const ICAL_URL='https://ical.booking.com/v1/export?t=24718578-4b35-44a4-bb20-b12706b09ed3';
-const monthNames=['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'];
-const weekdayNames=['Mo','Di','Mi','Do','Fr','Sa','So'];
-let blocked=[], offset=0;
-function parseIcalDate(s){
- const v=s.split(':').pop().trim();
- const m=v.match(/^(\d{4})(\d{2})(\d{2})/);
- if(!m)return null;
- return new Date(Date.UTC(+m[1],+m[2]-1,+m[3]));
-}
-function key(dt){return dt.getUTCFullYear()+'-'+String(dt.getUTCMonth()+1).padStart(2,'0')+'-'+String(dt.getUTCDate()).padStart(2,'0')}
-function parseIcal(text){
- const unfolded=text.replace(/\r?\n[ \t]/g,'');
- const events=unfolded.split('BEGIN:VEVENT').slice(1);
- const ranges=[];
- for(const ev of events){
-  const startLine=ev.split(/\r?\n/).find(x=>/^DTSTART(?:;[^:]*)?:/.test(x));
-  const endLine=ev.split(/\r?\n/).find(x=>/^DTEND(?:;[^:]*)?:/.test(x));
-  if(!startLine||!endLine)continue;
-  const start=parseIcalDate(startLine),end=parseIcalDate(endLine);
-  if(start&&end&&end>start)ranges.push({start,end});
- }
- return ranges;
-}
-function renderCalendar(){
- const host=document.getElementById('calendar-months');host.innerHTML='';
- const today=new Date();today.setHours(0,0,0,0);
- const first=new Date(today.getFullYear(),today.getMonth()+offset,1);
- const last=new Date(first.getFullYear(),first.getMonth()+5,1);
- document.getElementById('cal-range').textContent=monthNames[first.getMonth()]+' '+first.getFullYear()+' – '+monthNames[last.getMonth()]+' '+last.getFullYear();
- for(let m=0;m<6;m++){
-  const date=new Date(first.getFullYear(),first.getMonth()+m,1);
-  const card=document.createElement('div');card.className='month';
-  const h=document.createElement('h3');h.textContent=monthNames[date.getMonth()]+' '+date.getFullYear();card.appendChild(h);
-  const grid=document.createElement('div');grid.className='days';
-  weekdayNames.forEach(w=>{const s=document.createElement('span');s.className='weekday';s.textContent=w;grid.appendChild(s)});
-  const startOffset=(date.getDay()+6)%7;
-  for(let i=0;i<startOffset;i++){const s=document.createElement('span');grid.appendChild(s)}
-  const count=new Date(date.getFullYear(),date.getMonth()+1,0).getDate();
-  for(let day=1;day<=count;day++){
-   const cellDate=new Date(date.getFullYear(),date.getMonth(),day);
-   const cell=document.createElement('span');cell.textContent=day;
-   const utc= new Date(Date.UTC(cellDate.getFullYear(),cellDate.getMonth(),day));
-   const isBusy=blocked.some(r=>utc>=r.start&&utc<r.end);
-   cell.className=cellDate<today?'past':(isBusy?'busy':'free');
-   cell.title=cellDate<today?'Vergangener Tag':(isBusy?'Belegt':'Laut Kalender frei');
-   grid.appendChild(cell);
-  }
-  card.appendChild(grid);host.appendChild(card);
- }
-}
-document.getElementById('cal-prev').addEventListener('click',()=>{offset=Math.max(0,offset-6);renderCalendar()});
-document.getElementById('cal-next').addEventListener('click',()=>{offset+=6;renderCalendar()});
-renderCalendar();
-fetch(ICAL_URL,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.text()})
-.then(t=>{blocked=parseIcal(t);renderCalendar();document.getElementById('calendar-status').textContent='Kalender geladen. Letzte Aktualisierung beim Öffnen dieser Seite; die Synchronisierung von Booking.com kann verzögert sein.';})
-.catch(()=>{document.getElementById('calendar-status').textContent='Der Booking.com-Kalender konnte nicht direkt geladen werden. Möglicherweise blockiert der Browser die Verbindung. Für eine zuverlässige Anzeige ist ein kleiner Server-Proxy oder ein Kalenderdienst erforderlich.';});
-</script>
+<script>document.getElementById('year').textContent=new Date().getFullYear();const a=document.getElementById('arrival'),d=document.getElementById('departure');a.addEventListener('change',()=>{d.min=a.value;if(d.value&&d.value<=a.value)d.value='';});</script>
 </body></html>
