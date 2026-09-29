@@ -1,81 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seite im Aufbau</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
-
-    .container {
-      background: rgba(0, 0, 0, 0.5);
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-      max-width: 500px;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 15px;
-    }
-
-    .date {
-      font-weight: bold;
-      font-size: 1.4rem;
-      color: #ffd700;
-    }
-
-    .loader {
-      margin: 30px auto;
-      border: 6px solid #f3f3f3;
-      border-top: 6px solid #ffd700;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    footer {
-      margin-top: 20px;
-      font-size: 0.9rem;
-      opacity: 0.8;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Weitblick am Rammenfeld – komfortable Ferienwohnung in Schönecken in der Eifel. Wandern, Natur und Erholung.">
+<title>Weitblick am Rammenfeld | Ferienwohnung in der Eifel</title>
+<style>
+:root{--green:#173f32;--green2:#285a46;--cream:#f5f2e9;--ink:#202923;--muted:#69736c;--gold:#c6a66a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6}a{color:inherit}header{position:sticky;top:0;z-index:5;background:#fffF;border-bottom:1px solid #e8e8e2;backdrop-filter:blur(12px)}.nav{max-width:1160px;margin:auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-family:Georgia,serif;font-size:21px;color:var(--green);font-weight:bold;text-decoration:none;line-height:1.1}.brand small{display:block;font:10px Arial;letter-spacing:3px;margin-bottom:5px}.navlinks{display:flex;gap:22px;align-items:center}.navlinks a{text-decoration:none;font-size:13px;font-weight:bold}.btn{display:inline-block;background:var(--green);color:white;text-decoration:none;padding:12px 19px;border-radius:3px;font-weight:bold;border:0;cursor:pointer}.btn:hover{background:var(--green2)}.hero{min-height:610px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(13,34,27,.76),rgba(13,34,27,.18)),url('images/haus.jpg') center/cover no-repeat;color:white}.hero-inner{max-width:1160px;width:100%;margin:auto;padding:90px 24px}.eyebrow{text-transform:uppercase;letter-spacing:3px;font-size:11px;font-weight:bold;color:#e5d3ae}.hero h1{font:clamp(46px,7vw,82px)/.98 Georgia,serif;margin:15px 0 20px;max-width:750px}.hero p{font-size:18px;max-width:570px}.hero .btn{background:#fff;color:var(--green);margin-top:18px}.wrap{max-width:1160px;margin:auto;padding:78px 24px}.section-tag{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--green2);font-weight:bold}.heading{font:clamp(30px,4vw,46px)/1.12 Georgia,serif;color:var(--green);margin:8px 0 18px}.intro{max-width:740px;color:var(--muted)}.features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px}.feature{background:var(--cream);padding:22px;border-radius:4px}.feature b{display:block;color:var(--green);font-size:14px;margin:8px 0}.feature span{font-size:12px;color:var(--muted)}.icon{font-size:23px;color:var(--green2)}.gallery{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:220px 220px;gap:12px;margin-top:30px}.gallery img{width:100%;height:100%;object-fit:cover;border-radius:4px}.gallery img:first-child{grid-row:span 2}.split{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}.soft{background:var(--cream)}.booking{background:var(--green);color:#fff}.booking .heading{color:#fff}.booking p{color:#e0e8e2}.bookingbox{background:#fff;color:var(--ink);padding:25px;border-radius:4px;margin-top:25px}.bookingbox input,.bookingbox select,.bookingbox textarea{width:100%;padding:12px;border:1px solid #d8ddd8;border-radius:3px;font:inherit;margin:5px 0 13px}.bookingbox label{font-size:12px;font-weight:bold}.bookingbox .btn{width:100%;font-size:14px}.calendar-note{font-size:12px;color:var(--muted);margin-top:12px}.trails{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:30px}.trail{border:1px solid #e2e5df;padding:22px;border-radius:4px}.trail h3{font:22px Georgia,serif;color:var(--green);margin:5px 0}.trail small{color:var(--green2);font-weight:bold}.trail p{font-size:13px;color:var(--muted)}.map{width:100%;height:350px;border:0;border-radius:4px}.contact{background:#142f26;color:#fff}.contact .heading{color:#fff}.contact a{color:#fff}.contactgrid{display:grid;grid-template-columns:1fr 1fr;gap:35px}.foot{background:#10251e;color:#cbd5cf;padding:20px 24px;text-align:center;font-size:11px}
+@media(max-width:760px){.navlinks a:not(.btn){display:none}.hero{min-height:540px}.hero-inner{padding:70px 24px}.features{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:180px 180px 180px}.gallery img:first-child{grid-row:auto;grid-column:span 2}.split,.contactgrid{grid-template-columns:1fr}.trails{grid-template-columns:1fr}.wrap{padding:56px 22px}}
+</style>
 </head>
 <body>
-  <div class="container">
-    <h1>🚧 Webseite im Aufbau 🚧</h1>
-    <p>Unsere Webseite wird gerade erstellt.</p>
-    <p>Wir arbeiten intensiv daran, Ihnen bald etwas Großartiges zu präsentieren.</p>
-    <p>Startdatum:</p>
-    <p class="date">01.07.2026</p>
-
-    <div class="loader"></div>
-
-    <footer>
-      © 2026 – Alle Rechte vorbehalten
-    </footer>
-  </div>
-</body>
-</html>
+<header><nav class="nav"><a class="brand" href="#"><small>ACTIVEURLAUB</small>Weitblick am Rammenfeld</a><div class="navlinks"><a href="#wohnung">Wohnung</a><a href="#wandern">Wandern</a><a href="#umgebung">Umgebung</a><a href="#anfrage" onclick="document.querySelector('#anfrage').scrollIntoView()">Kontakt</a><a class="btn" href="#anfrage">Anfrage senden</a></div></nav></header>
+<main>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Schönecken · Eifel · Rheinland-Pfalz</div><h1>Ankommen.<br>Durchatmen.<br>Eifel erleben.</h1><p>Ihr komfortables Zuhause auf Zeit – mit Weitblick, ruhiger Lage und direktem Zugang zu Natur und Wanderwegen.</p><a class="btn" href="#anfrage">Aufenthalt anfragen</a></div></section>
+<section id="wohnung" class="wrap"><div class="section-tag">Ihre Unterkunft</div><h2 class="heading">Platz zum Wohlfühlen</h2><p class="intro">Die Ferienwohnung Weitblick am Rammenfeld verbindet eine großzügige Wohnfläche mit einer ruhigen Lage in Schönecken. Ob Urlaub, Wanderwochenende oder beruflicher Aufenthalt – hier finden Sie Raum zum Ankommen und Entspannen.</p><div class="features"><div class="feature"><div class="icon">⌂</div><b>115 m² Wohnfläche</b><span>Viel Platz für Ihren Aufenthalt</span></div><div class="feature"><div class="icon">▤</div><b>2 Schlafzimmer</b><span>Flexible Schlafmöglichkeiten</span></div><div class="feature"><div class="icon">☼</div><b>Balkon & Terrasse</b><span>Mit Blick ins Grüne</span></div><div class="feature"><div class="icon">P</div><b>Privater Parkplatz</b><span>Kostenlos direkt am Haus</span></div><div class="feature"><div class="icon">⌁</div><b>Kostenloses WLAN</b><span>Für Urlaub und Arbeit</span></div><div class="feature"><div class="icon">▦</div><b>Voll ausgestattete Küche</b><span>Für Selbstversorger</span></div><div class="feature"><div class="icon">◷</div><b>Waschmaschine</b><span>Auch für längere Aufenthalte</span></div><div class="feature"><div class="icon">✓</div><b>Ruhige Lage</b><span>Erholung in der Eifel</span></div></div>
+<div class="gallery"><img src="images/wohnzimmer.jpg" alt="Wohn- und Essbereich"><img src="images/schlafzimmer1.jpg" alt="Schlafzimmer"><img src="images/kueche.jpg" alt="Küche"><img src="images/schlafzimmer2.jpg" alt="Weiteres Schlafzimmer"><img src="images/balkon.jpg" alt="Balkon und Aussicht"></div><p class="calendar-note">Bilder: Bitte die Platzhalterdateien im Ordner „images“ durch Ihre Originalfotos ersetzen.</p></section>
+<section id="wandern" class="soft"><div class="wrap"><div class="section-tag">Aktiv in der Natur</div><h2 class="heading">Wanderwege direkt vor der Haustür</h2><p class="intro">Schönecken liegt am Naturschutzgebiet Schönecker Schweiz. Die Region bietet markante Dolomitfelsen, Wacholderheiden, Bachtäler und weite Ausblicke. Die folgenden Touren sind Beispiele; Wegemarkierungen und aktuelle Bedingungen bitte vor Ort prüfen.</p><div class="trails"><article class="trail"><small>MITTEL · CA. 2 STD.</small><h3>Keltenweg</h3><p>Rundweg von etwa 8,5 km durch Wald und Landschaft rund um Schönecken. Eine Tour für Wanderer, die eine abwechslungsreiche Runde suchen.</p></article><article class="trail"><small>LEICHT · CA. 1,5 STD.</small><h3>Panoramaweg Schönecken</h3><p>Rundtour mit Ausblicken auf den historischen Burgflecken. Die Strecke führt unter anderem durch die Schönecker Schweiz und das Altburgtal.</p></article><article class="trail"><small>ANSpruchsvoll · CA. 6–7 STD.</small><h3>Route 24 – Rund um Schönecken</h3><p>Etwa 20 km über Wald- und Wirtschaftswege. Für geübte Wanderer mit ausreichend Zeit und passender Ausrüstung.</p></article></div><p><a href="https://www.schoenecken.de/freizeit-und-tourismus/wandern" target="_blank" rel="noopener">Weitere Wandertouren auf der offiziellen Seite von Schönecken →</a></p></div></section>
+<section id="umgebung" class="wrap split"><div><div class="section-tag">Entdecken</div><h2 class="heading">Die Eifel erleben</h2><p class="intro">Rund um Schönecken erwarten Sie Natur, Geschichte und regionale Kultur.</p><ul><li><b>Schönecker Schweiz:</b> Naturschutzgebiet mit Felsformationen, Wacholderheiden und artenreichen Wiesen.</li><li><b>Burgruine Schönecken:</b> Wahrzeichen des Ortes und reizvolles Ziel für einen Spaziergang.</li><li><b>Prüm:</b> Kleinstadt mit der Salvator-Basilika, Einkaufsmöglichkeiten und Gastronomie.</li><li><b>Wetteldorfer Richtschnitt:</b> Geologischer Referenzpunkt und Besonderheit für naturkundlich Interessierte.</li><li><b>Radfahren & Mountainbiken:</b> Abwechslungsreiche Strecken durch Täler, Wälder und Höhenzüge der Eifel.</li></ul></div><div><iframe class="map" title="Karte und Wegbeschreibung nach Weitblick am Rammenfeld" loading="lazy" src="https://www.google.com/maps?q=Rammenfeld%208A%2C%2054614%20Sch%C3%B6necken&output=embed"></iframe><p><a href="https://www.google.com/maps/dir/?api=1&destination=Rammenfeld%208A%2C%2054614%20Sch%C3%B6necken" target="_blank" rel="noopener">Wegbeschreibung in Google Maps öffnen →</a></p></div></section>
+<section id="anfrage" class="booking"><div class="wrap split"><div><div class="section-tag" style="color:#d7c49d">Buchung & Kontakt</div><h2 class="heading">Verfügbarkeit anfragen</h2><p>Schicken Sie uns Ihre Wunschdaten. Wir prüfen die Verfügbarkeit und melden uns persönlich bei Ihnen.</p><p><b>Telefon / WhatsApp:</b><br><a href="tel:+4915901624869">+49 159 01624869</a></p><p><b>E-Mail:</b><br><a href="mailto:activeurlaub@gmail.com">activeurlaub@gmail.com</a></p><p><b>Adresse:</b><br>Rammenfeld 8A, 54614 Schönecken, Deutschland</p></div><div class="bookingbox">
+<!-- Optional: Booking.com iCal ist kein allgemein einbettbarer Live-Kalender. Für echte Synchronisierung wird ein freigegebener Kalender-/Channel-Manager-Link benötigt. -->
+<form action="https://formsubmit.co/activeurlaub@gmail.com" method="POST"><input type="hidden" name="_subject" value="Neue Buchungsanfrage – Weitblick am Rammenfeld"><input type="hidden" name="_captcha" value="true"><label for="name">Name</label><input id="name" name="Name" required placeholder="Vor- und Nachname"><label for="email">E-Mail</label><input id="email" type="email" name="E-Mail" required placeholder="name@beispiel.de"><label for="arrival">Anreise</label><input id="arrival" type="date" name="Anreise" required><label for="departure">Abreise</label><input id="departure" type="date" name="Abreise" required><label for="guests">Anzahl der Gäste</label><select id="guests" name="Gäste"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select><label for="message">Nachricht</label><textarea id="message" name="Nachricht" rows="3" placeholder="Ihre Fragen oder Wünsche"></textarea><button class="btn" type="submit">Unverbindliche Anfrage senden</button><p class="calendar-note">Mit dem Absenden wird eine unverbindliche Anfrage per E-Mail übermittelt. Die Buchung ist erst nach Bestätigung verbindlich.</p></form></div></div></section>
+</main><footer class="foot">© <span id="year"></span> Weitblick am Rammenfeld · <a href="mailto:activeurlaub@gmail.com">Kontakt</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();const a=document.getElementById('arrival'),d=document.getElementById('departure');a.addEventListener('change',()=>{d.min=a.value;if(d.value&&d.value<=a.value)d.value='';});</script>
+</body></html>
